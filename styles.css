@@ -1,6 +1,8 @@
 body {
     margin: 0;
     overflow: hidden;
+    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Sarabun', sans-serif;
 }
 
 main {
@@ -38,8 +40,14 @@ main {
     color: white;
 }
 
+form h1 {
+    font-size: 3rem;
+    color: #f7f5f3;
+    margin: 40px;
+}
+
 .sign-up-form {
-    background-color: #deb887;
+    background-color: #3f5f89;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,12 +58,35 @@ main {
 label {
     position: absolute;
     padding: 3px;
+    color: rgb(247, 245, 243, .4);
+}
+
+input {
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    border-bottom: 3px solid #b5a999;
+    color: #f7f5f3;
 }
 
 .form-row {
-    padding: 20px;
+    padding: 30px;
 }
 
-input, label {
+input,
+label {
     margin: 0 20px;
+    background-color: #3f5f89;
+}
+
+button {
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    padding: 0 20px 5px;
+    background-color: #b5a999;
+    margin: 40px;
+    font-family: 'Sarabun', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
+
 }
