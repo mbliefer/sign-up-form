@@ -79,6 +79,16 @@ label {
     background-color: #3f5f89;
 }
 
+input:focus {
+    outline: none;
+    border: 3px solid #b5a999;
+}
+
+input:focus, input:valid {
+    position: relative;
+    transform: translate(0, 25px);
+}
+
 button {
     font-size: 1.5rem;
     border-radius: 5px;
