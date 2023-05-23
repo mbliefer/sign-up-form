@@ -12,18 +12,10 @@ function checkPassword() {
     password = passwordInput.value;
     console.log(password);
     console.log(password.length);
-    if (password.length >= 8) {
-        eightChars.style.color = "lightgreen";
-    }
-    if (password.toLowerCase() !== password) {
-        uCase.style.color = "lightgreen";
-    }
-    if (password.toUpperCase() !== password) {
-        lCase.style.color = "lightgreen";
-    }
-    if (hasNumber.test(password)) {
-        num.style.color = "lightgreen";
-    }
+    eightChars.style.color = (password.length >= 8) ? "lightgreen" : "#eb4e33";
+    uCase.style.color = (password.toLowerCase() !== password) ? "lightgreen" : "#eb4e33";
+    lCase.style.color = (password.toUpperCase() !== password) ? "lightgreen" : "#eb4e33";
+    num.style.color = (hasNumber.test(password)) ? "lightgreen" : "#eb4e33";
 }
 
 
