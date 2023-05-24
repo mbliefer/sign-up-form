@@ -89,17 +89,27 @@ input {
     display: flex;
 }
 
-input ~ span {
+input ~ ul, input ~ span {
     display: none;
 }
 
-input:focus ~ span {
+input:focus ~ ul {
     display: block;
     position: absolute;
-    bottom: -85px;
+    bottom: -70px;
     color: #eb4e33;
     font-size: .9rem;
 }
+
+.error {
+    display: block;
+    position: relative;
+    font-size: .9rem;
+    color: #eb4e33;
+    bottom: -25px;
+    left: 25px;
+}
+
 
 input,
 label {
@@ -117,12 +127,11 @@ input:focus, input:valid {
     transform: translate(0, 25px);
 }
 
-.error {
-    position: relative;
-    transform: translate(0, 25px);
+input:not(:placeholder-shown):invalid {
     outline: none;
     border: 3px solid #eb4e33;
-    color: #eb4e33;
+    position: relative;
+    transform: translate(0, 25px);
 }
 
 input:focus {
