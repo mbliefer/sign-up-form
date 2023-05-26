@@ -13,7 +13,6 @@ const inputs = document.getElementsByTagName("input");
 let password = "";
 let passwordConfirm = "";
 let hasNumber = /\d/;
-let validation = 6;
 
 function checkPassword() {
     password = passwordInput.value;
@@ -45,9 +44,6 @@ function completedSignUp() {
     signUp.classList.add("hidden");
     signUpComplete.classList.remove("hidden");
 }
-
-
-
 
 passwordInput.addEventListener('keyup', checkPassword);
 confirmPassword.addEventListener('keyup', checkPasswordMatch);
