@@ -96,12 +96,12 @@ input ~ ul, input ~ span {
 input:focus ~ ul {
     display: block;
     position: absolute;
-    bottom: -70px;
+    bottom: -85px;
     color: #eb4e33;
     font-size: .9rem;
 }
 
-.error {
+input:focus ~ .error {
     display: block;
     position: relative;
     font-size: .9rem;
@@ -147,4 +147,17 @@ button {
     margin: 40px;
     font-family: 'Sarabun', sans-serif;
     /* font-family: 'Chakra Petch', sans-serif; */
+}
+
+.sign-up-complete {
+    position: relative;
+    background-color: #3f5f89;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
 }
